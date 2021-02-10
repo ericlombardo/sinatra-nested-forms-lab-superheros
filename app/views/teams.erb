@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+  </head>
+  <body>
+    <h1><%= @team[:name] %></h1>
+    <h2>Team Motto: <%= @team[:motto] %></h2>
+
+    <%@members.each do |m|%>
+      <h2>Hero Name: <%=m[:name]%></h2>
+      <h3>Hero Power: <%=m[:power]%></h3>
+      <h3>Hero Biography: <%=m[:bio]%></h3>
+    <%end%>
+      <!-- 
+    h2 Hero Name: <name>
+        h3 Hero Power: <power>
+        h3 Hero Biography: <bio>
+      h2 Hero Name: <name>
+        h3 Hero Power: <power>
+        h3 Hero Biography: <bio>
+      h2 Hero Name: <name>
+        h3 Hero Power: <power>
+        h3 Hero Biography: <bio>
+-->
+  </body>
+</html>
